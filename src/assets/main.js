@@ -6,7 +6,7 @@ $(function() {
       var courses = response.courses.complete;
       var el = $('#badges');
       for (var i = 0; i < courses.length; i++) {
-        var div = $('<div class="course"></div>');
+        var div = $('<div />', {class: 'course'});
         el.append(div);
         div.append('<h3>' + courses[i].name + '</h3>');
         div.append('<img src="' + courses[i].badge + '" />');
